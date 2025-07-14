@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Press Start 2P", system-ui;
+    color: rgb(216, 23, 23);
+    background-color: black;
+    min-height: 100vh;
+}
+
+
+img, video{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+ 
+.boite-logo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+img{
+    opacity: 0.5;
+   
+}
+
+img:hover{
+    opacity: 1;
+}
+
+.centrage-acc{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header, footer{
+    background-color: plum;
+    width: 100%;
+    border:  4px solid salmon;
+    
+}
+
+.flex-header-foot {
+    display: flex;
+    justify-content:space-around;
+}
+
+
+
+
+#titre{
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-infos-génrales{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+
+.boite-FEH{
+    border: 4px solid gold;
+    background-color: black;
+    color: rgb(216, 23, 23);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.galerie-FEH{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-header-foot {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-infos-génrales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie-FEH {
+        flex-direction: column;
+        align-items: center;
+    }
+}

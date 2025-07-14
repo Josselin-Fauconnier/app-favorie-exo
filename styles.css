@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img, video{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+
+img{
+    opacity: 0.5;
+   
+}
+
+img:hover{
+    opacity: 1;
+}
+
+header, footer{
+    background-color: plum;
+    width: 100%;
+    border:  4px solid salmon;
+    
+}
+
+
+.flex-header-foot {
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.boite-logo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+#centrage{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#boite-flex-presentation{
+    display: flex;
+    justify-content: space-around;
+}
+
+#boite-FEH{
+    border: 4px solid gold;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: rgb(216, 23, 23);
+    padding: 5px;
+    margin: 10px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+}
+
+#boite-duo{
+border: 4px solid rgb(96, 241, 12);
+width: 300px;
+height: 300px;
+background-color: rgb(22, 106, 106);
+color: antiquewhite;
+padding: 5px;
+margin: 10px;
+font-family: "Comforter Brush", cursive;
+font-size: 21px;
+}
+
+#boite-radio{
+    border: 4px solid wheat;
+    width: 300px;
+    height: 300px;
+    background-color:  #000000;
+    color:rgb(153, 233, 34);
+    padding:5px;
+    margin: 10px;
+    font-family: "Radio Canada", sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .flex-header-foot {
+        flex-direction: column;
+        align-items: center;
+    }
+   #boite-flex-presentation{
+    flex-direction: column;
+    align-items: center;
+   } 
+   
+}

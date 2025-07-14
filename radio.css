@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #000000;
+    color: rgb(153, 233, 34);
+    font-family: "Radio Canada", sans-serif;
+    min-height: 100vh;
+}
+
+
+img, video{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+ 
+.boite-logo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+img{
+    opacity: 0.5;
+   
+}
+
+img:hover{
+    opacity: 1;
+}
+
+.centrage-acc{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header, footer{
+    background-color: plum;
+    width: 100%;
+    border:  4px solid salmon;
+    
+}
+
+.flex-header-foot {
+    display: flex;
+    justify-content:space-around;
+}
+
+#titre{
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-radio{
+    display: flex;
+    
+}
+
+
+.galerie-radio{
+    display: flex;
+    gap: 10px;
+    justify-content:space-around
+}
+
+
+.boite-radio{
+    border: 4px solid wheat;
+    background-color: #000000;
+    color: rgb(153, 233, 34);
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .flex-header-foot {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-radio{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie-radio {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

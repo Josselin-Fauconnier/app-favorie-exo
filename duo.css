@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:rgb(22, 106, 106);
+    color: antiquewhite;
+    font-family: "Comforter Brush", cursive;
+    min-height: 100vh;
+    font-size: 25px;
+}
+
+
+img, video{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+ 
+.boite-logo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+img{
+    opacity: 0.5;
+   
+}
+
+img:hover{
+    opacity: 1;
+}
+
+.centrage-acc{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header, footer{
+    background-color: plum;
+    width: 100%;
+    border:  4px solid salmon;
+    
+}
+
+.flex-header-foot {
+    display: flex;
+    justify-content:space-around;
+}
+
+#titre{
+    text-align: center;
+    margin: 20px;
+}
+
+#centrage{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-duo{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.boite-duo{
+    border: 4px solid black;
+    background-color:rgb(22, 106, 106);
+    color: antiquewhite;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.galerie-duo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-header-foot {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-duo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie-duo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
